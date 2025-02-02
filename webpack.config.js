@@ -22,7 +22,7 @@ module.exports = (_, argv) => ({
     headers: {
       "Access-Control-Allow-Origin": "*",
     },
-    watchFiles: [path.resolve(__dirname, 'src')],
+    watchFiles: [path.resolve(__dirname, 'build')],
     onListening: function (devServer) {
       const port = devServer.server.address().port
 
